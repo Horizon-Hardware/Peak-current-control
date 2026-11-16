@@ -1,0 +1,20 @@
+<idea-plugin>
+  <id>cn.crb.stm32.wave.scope</id>
+  <name>STM32 Wave Scope</name>
+  <version>1.0.6</version>
+  <vendor>CRB Workspace Tools</vendor>
+  <description><![CDATA[
+    Plot STM32 global variables while the CPU runs, using read-only OpenOCD Tcl memory reads.
+    No firmware instrumentation or extra GDB target connection. Offline ELF resolution uses
+    arm-none-eabi-gdb. Includes struct/array expansion, dual-cursor measurements, explicit
+    scalar RAM editing, per-channel plots, CSV export and a hardware-free demo.
+  ]]></description>
+  <idea-version since-build="253" until-build="253.*"/>
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.clion.ide</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <projectService serviceImplementation="cn.crb.wavescope.ScopeSettings"/>
+    <toolWindow id="STM32 Wave Scope" anchor="bottom"
+                factoryClass="cn.crb.wavescope.ScopeToolWindowFactory"/>
+  </extensions>
+</idea-plugin>

@@ -1,0 +1,14 @@
+<component name="DebugServers">
+  <generic-debug-target name="OpenOCD HLA Wave Scope" uniqueID="50b373e5-7f7f-45de-a94a-bd1f7ade1ca6">
+    <debugger version="1">
+      <debugger kind="GDB" isBundled="true" />
+      <env />
+    </debugger>
+    <gdbserver exe="D:/Document/openocd/OpenOCD-20260302-0.12.0/bin/openocd.exe" args="-s &quot;D:/Document/openocd/OpenOCD-20260302-0.12.0/share/openocd/scripts&quot; -f &quot;D:/Document/Code/BEST_C/G474CBT6-2026-7-2/tools/stm32-wave-scope/config/stm32g474-stlink-hla-live.cfg&quot; -c &quot;gdb port 3333&quot; -c &quot;telnet port 4444&quot; -c &quot;tcl port 6666&quot;">
+      <env />
+    </gdbserver>
+    <console enabled="true" port="4444" />
+    <target download-type="UPDATED_ONLY" reset-command="monitor reset halt" />
+    <connection remote-string="127.0.0.1:3333" custom-script="echo Connecting to target...\n&#10;$GDBTargetCommand$&#10;echo Connected to target!\n" warmup-ms="500" />
+  </generic-debug-target>
+</component>

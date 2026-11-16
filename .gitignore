@@ -1,0 +1,85 @@
+# STM32 firmware: CMake build output and machine-specific configuration
+/G474CBT6-2026-7-2/build/
+/G474CBT6-2026-7-2/cmake-build-*/
+/G474CBT6-2026-7-2/CMakeFiles/
+/G474CBT6-2026-7-2/CMakeCache.txt
+/G474CBT6-2026-7-2/cmake_install.cmake
+/G474CBT6-2026-7-2/CTestTestfile.cmake
+/G474CBT6-2026-7-2/CMakeUserPresets.json
+/G474CBT6-2026-7-2/compile_commands.json
+/G474CBT6-2026-7-2/build.ninja
+/G474CBT6-2026-7-2/.ninja_deps
+/G474CBT6-2026-7-2/.ninja_log
+
+# Keil generated output and per-user options; keep .uvprojx and source files
+/G474CBT6-2026-7-2/MDK-ARM/G474CBT6-2026-7-2/
+/G474CBT6-2026-7-2/MDK-ARM/Objects/
+/G474CBT6-2026-7-2/MDK-ARM/Listings/
+/G474CBT6-2026-7-2/MDK-ARM/*.uvguix.*
+/G474CBT6-2026-7-2/MDK-ARM/*.uvoptx
+
+# Compiled firmware and build intermediates
+*.o
+*.obj
+*.d
+*.axf
+*.elf
+*.hex
+*.bin
+*.map
+*.crf
+*.dep
+*.lnp
+*.build_log.htm
+
+# IDE state, debugger user state, and Python caches
+.idea/
+*.jdebug.user
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Temporary analysis files and local tool paths
+/G474CBT6-2026-7-2/tmp/
+/G474CBT6-2026-7-2/tools/stm32-wave-scope/local-tools.json
+
+# Plugin build output (also covered by the plugin's own .gitignore)
+/G474CBT6-2026-7-2/tools/stm32-wave-scope/build/
+/G474CBT6-2026-7-2/tools/stm32-wave-scope/dist/
+
+# KiCad local preferences, generated caches, and lock files
+*.kicad_prl
+fp-info-cache
+~*.lck
+*.kicad_pcb.lck
+*.kicad_sch.lck
+
+# KiCad automatic backups and recovery files
+*-backups/
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_pro-bak
+*.sch-bak
+_autosave-*
+~*.kicad_pcb
+~*.kicad_sch
+
+# Local editing history and temporary files
+.history/
+.history_trim/
+*.bak
+*.bck
+*.tmp
+*.swp
+*.swo
+*~
+
+# Operating system metadata
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Keep source code, CubeMX/Keil/CMake project files, and KiCad design/library files.
+# Keep production/, dfm/, Gerber, drill, BOM, placement, and manufacturing ZIP files.
+# Keep documentation, images, debug configurations, and fabrication-toolkit-options.json.
